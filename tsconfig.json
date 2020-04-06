@@ -12,7 +12,12 @@
     "baseUrl": ".",
     "types": [
       "webpack-env",
+      "vuetify",
       "jest"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/vuetify/types"
     ],
     "paths": {
       "@/*": [
