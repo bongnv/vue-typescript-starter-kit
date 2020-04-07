@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
@@ -9,9 +8,14 @@
 // @ is an alias to /src
 import Vue from "vue";
 import HelloWorld from "@/components/HelloWorld.vue";
+import appConfig from "@/app.config.json";
 
 export default Vue.extend({
   name: "Home",
+  metaInfo: {
+    title: "Home",
+    meta: [{ name: "description", content: appConfig.description }]
+  },
   components: {
     HelloWorld
   }
